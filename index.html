@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <!-- <script src="Scripts/jquery-3.3.1.min.js"></script> -->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  
+  <header>
+    <span id="brand">pixabayGET</span>
+    <input type="search" name="search" id="search" value="" /><i id="search_btn">search</i>
+  </header>
+ 
+<ons-carousel class="caro" swipeable auto-scroll overscrollable>
+  <ons-carousel-item class="item">
+    get free images from pixabay <br />
+    with <b>pixabayGET</b>
+  </ons-carousel-item>
+  <ons-carousel-item class="item">
+    pixabayGET <br /> a lightweight new way to find images from pixabay
+  </ons-carousel-item>
+</ons-carousel>
+
+<div id="container"></div>
+
+<div id="img_data"><br />
+<div id="img_close">X</div>
+  <div id="img_title">Flower</div>
+  <div id="img_big">
+    <img id="imageView" src="assets/11-25-18-295_640.webp" alt="" />
+  </div>
+  
+  <div id="img_ctrls">
+    
+    <span class="i">perm_identity</span><div class="linear" id="img_author">wikiJohnson</div><br />
+    
+    
+    
+    <span class="i">visibility</span><div class="linear" id="img_views">803578</div>&nbsp;&nbsp;
+    <span class="i">thumb_up</span><div class="linear" id="img_likes"></div>&nbsp;&nbsp;
+    <span class="i">save_alt</span><div class="linear" id="img_downloads">43690</div>
+    
+    
+    <div class="btn" id="img_download">Download image
+    <div class="img_download_options">
+      <a id="preview_size" download="pixabay_preview_image.jpg" href="#">Preview</a>
+      <a id="normal_size" download="pixabay_normal_image.jpg" href="#">Normal</a>
+      <a id="large_size" download="pixabay_large_image.jpg" href="#">Large</a>
+    </div>
+    </div>
+    
+    <a class="btn" id="img_goToPage" href="">View on pixabay</a>
+  </div>
+</div>
+
+<footer>
+  by satyambhartijnv0@gmail.com,<br /> proudly with <b>Pixabay Api</b> and <b>Onsen UI</b>
+</footer>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
